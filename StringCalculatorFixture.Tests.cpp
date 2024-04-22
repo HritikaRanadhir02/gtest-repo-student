@@ -115,7 +115,7 @@ TEST_F(StringCalculatorTestFixture,Passed_multiple_delimiters){
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
-TEST_F(StringCalculatorTestFixture,when_passed_multiple_multicharacter_delimiters){
+TEST_F(StringCalculatorTestFixture,Passed_multiple_multicharacter_delimiters){
     //Arrangee
     StringCalculator objUnderTest;
     string input="//[**][%^]\n4**1%^9";
