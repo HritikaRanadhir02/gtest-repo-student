@@ -37,7 +37,7 @@ TEST_F(StringCalculatorTestFixture,Given2numbers){
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
-TEST_F(StringCalculatorTestFixture,when_passed_multiple_comma_delimited_numbers){
+TEST_F(StringCalculatorTestFixture,Multiple_comma_delimited_numbers){
     //Arrangee
     StringCalculator objUnderTest;
     string input="1,2,3";
@@ -47,7 +47,7 @@ TEST_F(StringCalculatorTestFixture,when_passed_multiple_comma_delimited_numbers)
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
-TEST_F(StringCalculatorTestFixture,when_delimited_with_newline_and_comma){
+TEST_F(StringCalculatorTestFixture,Newline_and_comma){
     //Arrangee
     StringCalculator objUnderTest;
     string input="1\n2,3";
@@ -57,7 +57,7 @@ TEST_F(StringCalculatorTestFixture,when_delimited_with_newline_and_comma){
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
-TEST_F(StringCalculatorTestFixture,when_passed_a_delimiter){
+TEST_F(StringCalculatorTestFixture,Passed_a_delimiter){
     //Arrangee
     StringCalculator objUnderTest;
     string input="//;\n1;2";
@@ -67,7 +67,7 @@ TEST_F(StringCalculatorTestFixture,when_passed_a_delimiter){
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
-TEST_F(StringCalculatorTestFixture,when_passed_negative_numbers){
+TEST_F(StringCalculatorTestFixture,Passed_negative_numbers){
     //Arrangee
     StringCalculator objUnderTest;
     string input="1,-2,-4,5";
@@ -76,7 +76,7 @@ TEST_F(StringCalculatorTestFixture,when_passed_negative_numbers){
     //Assert
     ASSERT_ANY_THROW(objUnderTest.Add(input));
 }
-TEST_F(StringCalculatorTestFixture,when_passed_negative_numbers1){
+TEST_F(StringCalculatorTestFixture,Passed_negative_numbers1){
     //Arrangee
     StringCalculator objUnderTest;
     string input="1,-2,-4,5";
@@ -85,7 +85,7 @@ TEST_F(StringCalculatorTestFixture,when_passed_negative_numbers1){
     //Assert
     ASSERT_THROW(objUnderTest.Add(input),invalid_argument);
 }
-TEST_F(StringCalculatorTestSuite,when_passed_numbers_over_1000){
+TEST_F(StringCalculatorTestSuite,Passed_numbers_over_1000){
     //Arrangee
     StringCalculator objUnderTest;
     string input="42,1001,3";
@@ -95,7 +95,7 @@ TEST_F(StringCalculatorTestSuite,when_passed_numbers_over_1000){
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
-TEST_F(StringCalculatorTestFixture,when_passed_multicharacter_delimiter){
+TEST_F(StringCalculatorTestFixture,Passed_multicharacter_delimiter){
     //Arrangee
     StringCalculator objUnderTest;
     string input="//[***]\n8***2***3";
@@ -105,7 +105,7 @@ TEST_F(StringCalculatorTestFixture,when_passed_multicharacter_delimiter){
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
-TEST_F(StringCalculatorTestFixture,when_passed_multiple_delimiters){
+TEST_F(StringCalculatorTestFixture,Passed_multiple_delimiters){
     //Arrangee
     StringCalculator objUnderTest;
     string input="//[*][%]\n4*2%3";
